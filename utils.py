@@ -10,9 +10,9 @@ print("CUDA Available?", cuda)
 def plot_dataset_sample(train_loader):
     batch_data, batch_label = next(iter(train_loader))
 
-    fig = plt.figure()
-    for i in range(12):
-        plt.subplot(3, 4, i + 1)
+    #fig = plt.figure()
+    for i in range(3):
+        plt.subplot(1, 3, i + 1)
         plt.tight_layout()
         plt.imshow(batch_data[i].squeeze(0), cmap='gray')
         plt.title(batch_label[i].item())
