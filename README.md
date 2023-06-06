@@ -1,6 +1,9 @@
-# Session 5 Assignment
+# Session 6 Assignment
 
-Handwritten digits detection model based on AlexNet Architecture, trained on MNIST dataset with 60,000 images
+Handwritten digits detection model, trained on MNIST dataset of 60,000 images
+Goal is to create a model with 
+- 99.4% validation accuracy
+- Less than 20k Parameters
 
 ## model.py
 The file contains model class *Net* as subclass of _torch.nn.Module_. The _Net_ model is based on AlexNet architecture. 
