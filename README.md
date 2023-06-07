@@ -174,15 +174,14 @@ To access the notebook, open this file in a browser:
 
 Open the above link in your favourite browser, a page similar to below shall be loaded.
 
-![Jupyter server index page](https://drive.google.com/file/d/1v5LLsGIZ7J3_S0vMwTb7yiZJIakXgdxv/view)
+![Jupyter server index page](https://github.com/piygr/s5erav1/assets/135162847/40087757-4c99-4b98-8abd-5c4ce95eda38)
 
-- Click on the notebook link.
+- Click on the notebook (.ipynb) link.
 
 A page similar to below shall be loaded. Make sure, it shows *trusted* in top bar. 
 If it's not _trusted_, click on *Trust* button and add to the trusted files.
 
-![Jupyter notebook page](https://drive.google.com/file/d/1JNGwv-9DXF9PKYyT_q7KDXyGJpcG4gxk/view)
-
+![Jupyter notebook page](https://github.com/piygr/s5erav1/assets/135162847/7858da8f-e07e-47cd-9aa9-19c8c569def1)
 Now, the notebook can be operated from the action panel.
 
 Happy Modeling :-) 
