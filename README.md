@@ -3,15 +3,29 @@
 **Showcasing backpropogation through excel for the above mentioned neural network**
 
 ## How bakcpropogation works?
-The goal 
+The goal of neural netowrk training is to reduce the network error (mean squared error) of estimnated output with the labeled output.
+So, with every delta change in error, the mechanism of updating the network parameters value is called backpropogation.
+With the given neural network, we will understand how the backpropogation looks in action.
 
+1. In the first step, every neuron as a function of previous layer's connected neurons & corresponding weights is defined. Refer 1.) in the below screenshot.
 
 <img width="1337" alt="s6_part1_dEdW" src="https://github.com/piygr/s6erav1/assets/135162847/101f7fae-431a-4bc7-be26-2e6fecc9f587">
+
+2. In the second step, the partial derivatives of error w.r.t. parameters (weights), starting from the output layer moving towards the input layer (hence backpropogation) are derived. Refer to 2.) - 6.). 
+
+3. Once all the partial derivatives are derived in terms of weights, input values, target values & previous layer's neuron values, the excel sheet is populated as show below. 
 <img width="1222" alt="s6_part1_layer1" src="https://github.com/piygr/s6erav1/assets/135162847/151190c1-57f9-4209-bc18-e160fc4bf94e">
 <img width="1125" alt="s6_part1_layer2" src="https://github.com/piygr/s6erav1/assets/135162847/5cac1f43-4355-45c1-a042-bbf6d5af992f">
 <img width="914" alt="s6_part1_error_gradients" src="https://github.com/piygr/s6erav1/assets/135162847/afa864a0-9ec9-4b40-b7e9-dff862a40436">
 
+4. With every iteration, all the weights are updated, all neurons are computed and with the new error, the process is continued.
+
+5. Note that, to update weights in every iteration, the following equation is used. Here, learning rate plays an important role.
+ 
+![image](https://github.com/piygr/s6erav1/assets/135162847/99f89b6c-e2f9-421b-826d-210ca6c1c61b)  
+
 ## Effects of learning rate
+
 <table>
         <tr>
                 <td>
@@ -53,6 +67,11 @@ The goal
                 <td>
         </tr>
 </table>
+
+Since, learning rate is nothing but the weightage given to the error gradient. Higher the learning rate, faster the error converges to zero.
+But after a point if the learning rate is increased, the error doesn't converge. The reason is, the weights never reach to their local minima.
+
+-----
 
 # Session 6 Assignment - Part 2
 Modle to detect handwritten digits, trained on MNIST dataset of 60,000 images.
