@@ -31,24 +31,24 @@ With the given neural network, we will understand how the backpropogation looks 
                 <td>
                         <span>
         <b>Learning Rate - 0.1</b><br/>
-        <img width="400" alt="s6_part1_lr0 1" src="https://github.com/piygr/s6erav1/assets/135162847/39d84d65-3271-46c9-b048-b6c89a4473db">
+        <img width="300" alt="s6_part1_lr0 1" src="https://github.com/piygr/s6erav1/assets/135162847/39d84d65-3271-46c9-b048-b6c89a4473db">
 </span>
                 </td>
                 <td>
-                        <span><b>Learning Rate - 0.2</b><br/><img width="400" alt="s6_part1_lr0 2" src="https://github.com/piygr/s6erav1/assets/135162847/fae4258a-73d6-4cff-8aac-fdd53f17ab41"></span>
+                        <span><b>Learning Rate - 0.2</b><br/><img width="300" alt="s6_part1_lr0 2" src="https://github.com/piygr/s6erav1/assets/135162847/fae4258a-73d6-4cff-8aac-fdd53f17ab41"></span>
                 <td>
         </tr>
         <tr>
                 <td>
                         <span>
         <b>Learning Rate - 0.5</b><br/>
-        <img width="400" alt="s6_part1_lr0 5" src="https://github.com/piygr/s6erav1/assets/135162847/9c0b9cc7-78ac-48db-844f-dcf30f98e15b">
+        <img width="300" alt="s6_part1_lr0 5" src="https://github.com/piygr/s6erav1/assets/135162847/9c0b9cc7-78ac-48db-844f-dcf30f98e15b">
 </span> 
                 </td>
                 <td>
                     <span>
         <b>Learning Rate - 0.8</b><br/>
-        <img width="400" alt="s6_part1_lr0 8" src="https://github.com/piygr/s6erav1/assets/135162847/94fc1378-82f9-47d7-be53-d087204c7b3f">
+        <img width="300" alt="s6_part1_lr0 8" src="https://github.com/piygr/s6erav1/assets/135162847/94fc1378-82f9-47d7-be53-d087204c7b3f">
 </span>    
                 <td>
         </tr>
@@ -56,13 +56,13 @@ With the given neural network, we will understand how the backpropogation looks 
                 <td>
                     <span>
         <b>Learning Rate - 1.0</b><br/>
-        <img width="400" alt="s6_part1_lr1 0" src="https://github.com/piygr/s6erav1/assets/135162847/f88d1e41-e976-4265-b2bc-1277438974d6">
+        <img width="300" alt="s6_part1_lr1 0" src="https://github.com/piygr/s6erav1/assets/135162847/f88d1e41-e976-4265-b2bc-1277438974d6">
 </span>    
                 </td>
                 <td>
                      <span>
         <b>Learning Rate - 2.0</b><br/>
-        <img width="400" alt="s6_part1_lr2 0" src="https://github.com/piygr/s6erav1/assets/135162847/7099b159-1a1d-4632-a010-c78c157529cc">
+        <img width="300" alt="s6_part1_lr2 0" src="https://github.com/piygr/s6erav1/assets/135162847/7099b159-1a1d-4632-a010-c78c157529cc">
 </span>
                 <td>
         </tr>
