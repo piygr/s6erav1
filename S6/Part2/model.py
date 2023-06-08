@@ -9,8 +9,8 @@ class OptimizedNet(nn.Module):
 
         self.conv1 = nn.Sequential(
             nn.Conv2d(1, 8, 3, padding=1), #=> 8x28x28
-            nn.BatchNorm2d(8),
             nn.ReLU(),
+            nn.BatchNorm2d(8),
             nn.Dropout2d(0.02),
             nn.Conv2d(8, 8, 3, padding=1), #=> 8x28x28
             nn.BatchNorm2d(8),
@@ -21,8 +21,8 @@ class OptimizedNet(nn.Module):
 
         self.conv2 = nn.Sequential(
             nn.Conv2d(8, 16, 3, padding=1), # => 16x14x14
-            nn.BatchNorm2d(16),
             nn.ReLU(),
+            nn.BatchNorm2d(16),
             nn.Dropout2d(0.02),
             nn.Conv2d(16, 16, 3, padding=1),    # => 16x14x14
             nn.BatchNorm2d(16),
@@ -32,8 +32,8 @@ class OptimizedNet(nn.Module):
 
         self.conv3 = nn.Sequential(
             nn.Conv2d(16, 32, 3),    # => 32x12x12
-            nn.BatchNorm2d(32),
             nn.ReLU(),
+            nn.BatchNorm2d(32),
             nn.Dropout2d(0.02),
             nn.MaxPool2d(2, 2),      # => 32x6x6
             nn.Conv2d(32, 32, 3),    # => 32x4x4
