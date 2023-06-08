@@ -92,30 +92,30 @@ Below is the model summary -
         Layer (type)               Output Shape         Param #
 ================================================================
             Conv2d-1            [-1, 8, 28, 28]              80
-       BatchNorm2d-2            [-1, 8, 28, 28]              16
-              ReLU-3            [-1, 8, 28, 28]               0
+              ReLU-2            [-1, 8, 28, 28]               0
+       BatchNorm2d-3            [-1, 8, 28, 28]              16
          Dropout2d-4            [-1, 8, 28, 28]               0
             Conv2d-5            [-1, 8, 28, 28]             584
-       BatchNorm2d-6            [-1, 8, 28, 28]              16
-              ReLU-7            [-1, 8, 28, 28]               0
+              ReLU-6            [-1, 8, 28, 28]               0
+       BatchNorm2d-7            [-1, 8, 28, 28]              16
          Dropout2d-8            [-1, 8, 28, 28]               0
          MaxPool2d-9            [-1, 8, 14, 14]               0
            Conv2d-10           [-1, 16, 14, 14]           1,168
-      BatchNorm2d-11           [-1, 16, 14, 14]              32
-             ReLU-12           [-1, 16, 14, 14]               0
+             ReLU-11           [-1, 16, 14, 14]               0
+      BatchNorm2d-12           [-1, 16, 14, 14]              32
         Dropout2d-13           [-1, 16, 14, 14]               0
            Conv2d-14           [-1, 16, 14, 14]           2,320
-      BatchNorm2d-15           [-1, 16, 14, 14]              32
-             ReLU-16           [-1, 16, 14, 14]               0
+             ReLU-15           [-1, 16, 14, 14]               0
+      BatchNorm2d-16           [-1, 16, 14, 14]              32
         Dropout2d-17           [-1, 16, 14, 14]               0
            Conv2d-18           [-1, 32, 12, 12]           4,640
-      BatchNorm2d-19           [-1, 32, 12, 12]              64
-             ReLU-20           [-1, 32, 12, 12]               0
+             ReLU-19           [-1, 32, 12, 12]               0
+      BatchNorm2d-20           [-1, 32, 12, 12]              64
         Dropout2d-21           [-1, 32, 12, 12]               0
         MaxPool2d-22             [-1, 32, 6, 6]               0
            Conv2d-23             [-1, 32, 4, 4]           9,248
-      BatchNorm2d-24             [-1, 32, 4, 4]              64
-             ReLU-25             [-1, 32, 4, 4]               0
+             ReLU-24             [-1, 32, 4, 4]               0
+      BatchNorm2d-25             [-1, 32, 4, 4]              64
         Dropout2d-26             [-1, 32, 4, 4]               0
            Conv2d-27             [-1, 10, 4, 4]             330
 ================================================================
@@ -139,77 +139,107 @@ In the notebook, we are creating train & test datasets with various transformati
 
 We can monitor our model performance while it's getting trained. The output looks like this - 
 ```
+Adjusting learning rate of group 0 to 1.0000e-02.
 Epoch 1
-Train: Loss=0.0829 Batch_id=937 Accuracy=87.58: 100%|██████████| 938/938 [00:41<00:00, 22.56it/s]
-Test set: Average loss: 0.0524, Accuracy: 9856/10000 (98.56%)
+Train: Loss=0.1356 Batch_id=937 Accuracy=92.10: 100%|██████████| 938/938 [00:47<00:00, 19.96it/s]
+Test set: Average loss: 0.0456, Accuracy: 9868/10000 (98.68%)
 
 Adjusting learning rate of group 0 to 1.0000e-02.
-
 Epoch 2
-Train: Loss=0.0588 Batch_id=937 Accuracy=96.93: 100%|██████████| 938/938 [00:41<00:00, 22.35it/s]
-Test set: Average loss: 0.0335, Accuracy: 9904/10000 (99.04%)
+Train: Loss=0.0651 Batch_id=937 Accuracy=97.64: 100%|██████████| 938/938 [00:49<00:00, 19.09it/s]
+Test set: Average loss: 0.0368, Accuracy: 9881/10000 (98.81%)
 
 Adjusting learning rate of group 0 to 1.0000e-02.
-
 Epoch 3
-Train: Loss=0.1722 Batch_id=937 Accuracy=97.58: 100%|██████████| 938/938 [00:43<00:00, 21.49it/s]
-Test set: Average loss: 0.0292, Accuracy: 9916/10000 (99.16%)
+Train: Loss=0.0078 Batch_id=937 Accuracy=98.07: 100%|██████████| 938/938 [00:40<00:00, 23.30it/s]
+Test set: Average loss: 0.0215, Accuracy: 9930/10000 (99.30%)
 
 Adjusting learning rate of group 0 to 1.0000e-02.
-
 Epoch 4
-Train: Loss=0.0434 Batch_id=937 Accuracy=97.79: 100%|██████████| 938/938 [00:42<00:00, 22.10it/s]
-Test set: Average loss: 0.0270, Accuracy: 9910/10000 (99.10%)
+Train: Loss=0.0287 Batch_id=937 Accuracy=98.25: 100%|██████████| 938/938 [00:44<00:00, 21.14it/s]
+Test set: Average loss: 0.0206, Accuracy: 9934/10000 (99.34%)
 
 Adjusting learning rate of group 0 to 1.0000e-02.
-
 Epoch 5
-Train: Loss=0.0943 Batch_id=937 Accuracy=97.97: 100%|██████████| 938/938 [00:42<00:00, 22.27it/s]
-Test set: Average loss: 0.0218, Accuracy: 9927/10000 (99.27%)
+Train: Loss=0.0379 Batch_id=937 Accuracy=98.53: 100%|██████████| 938/938 [00:44<00:00, 21.15it/s]
+Test set: Average loss: 0.0208, Accuracy: 9930/10000 (99.30%)
 
 Adjusting learning rate of group 0 to 1.0000e-02.
-
 Epoch 6
-Train: Loss=0.0167 Batch_id=937 Accuracy=98.23: 100%|██████████| 938/938 [00:43<00:00, 21.62it/s]
-Test set: Average loss: 0.0207, Accuracy: 9941/10000 (99.41%)
+Train: Loss=0.0112 Batch_id=937 Accuracy=98.54: 100%|██████████| 938/938 [00:45<00:00, 20.62it/s]
+Test set: Average loss: 0.0185, Accuracy: 9937/10000 (99.37%)
 
 Adjusting learning rate of group 0 to 1.0000e-02.
-
 Epoch 7
-Train: Loss=0.1589 Batch_id=937 Accuracy=98.27: 100%|██████████| 938/938 [00:42<00:00, 22.02it/s]
-Test set: Average loss: 0.0186, Accuracy: 9936/10000 (99.36%)
+Train: Loss=0.0785 Batch_id=937 Accuracy=98.61: 100%|██████████| 938/938 [00:45<00:00, 20.56it/s]
+Test set: Average loss: 0.0190, Accuracy: 9942/10000 (99.42%)
 
 Adjusting learning rate of group 0 to 1.0000e-03.
-
 Epoch 8
-Train: Loss=0.0111 Batch_id=937 Accuracy=98.62: 100%|██████████| 938/938 [00:42<00:00, 22.11it/s]
-Test set: Average loss: 0.0164, Accuracy: 9945/10000 (99.45%)
+Train: Loss=0.0279 Batch_id=937 Accuracy=98.87: 100%|██████████| 938/938 [00:43<00:00, 21.38it/s]
+Test set: Average loss: 0.0150, Accuracy: 9948/10000 (99.48%)
 
 Adjusting learning rate of group 0 to 1.0000e-03.
-
 Epoch 9
-Train: Loss=0.0019 Batch_id=937 Accuracy=98.64: 100%|██████████| 938/938 [00:42<00:00, 22.08it/s]
-Test set: Average loss: 0.0162, Accuracy: 9951/10000 (99.51%)
+Train: Loss=0.1910 Batch_id=937 Accuracy=98.95: 100%|██████████| 938/938 [00:43<00:00, 21.52it/s]
+Test set: Average loss: 0.0149, Accuracy: 9954/10000 (99.54%)
 
 Adjusting learning rate of group 0 to 1.0000e-03.
-
 Epoch 10
-Train: Loss=0.0296 Batch_id=937 Accuracy=98.77: 100%|██████████| 938/938 [00:42<00:00, 22.03it/s]
-Test set: Average loss: 0.0159, Accuracy: 9948/10000 (99.48%)
+Train: Loss=0.0464 Batch_id=937 Accuracy=98.92: 100%|██████████| 938/938 [00:43<00:00, 21.32it/s]
+Test set: Average loss: 0.0145, Accuracy: 9950/10000 (99.50%)
 
 Adjusting learning rate of group 0 to 1.0000e-03.
-
 Epoch 11
-Train: Loss=0.0816 Batch_id=937 Accuracy=98.76: 100%|██████████| 938/938 [00:45<00:00, 20.47it/s]
-Test set: Average loss: 0.0155, Accuracy: 9952/10000 (99.52%)
+Train: Loss=0.0013 Batch_id=937 Accuracy=99.00: 100%|██████████| 938/938 [00:47<00:00, 19.81it/s]
+Test set: Average loss: 0.0143, Accuracy: 9952/10000 (99.52%)
 
 Adjusting learning rate of group 0 to 1.0000e-03.
-
 Epoch 12
-Train: Loss=0.0255 Batch_id=937 Accuracy=98.65: 100%|██████████| 938/938 [00:46<00:00, 20.19it/s]
-Test set: Average loss: 0.0152, Accuracy: 9949/10000 (99.49%)
+Train: Loss=0.1712 Batch_id=937 Accuracy=99.06: 100%|██████████| 938/938 [00:44<00:00, 21.30it/s]
+Test set: Average loss: 0.0138, Accuracy: 9953/10000 (99.53%)
 
 Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch 13
+Train: Loss=0.0084 Batch_id=937 Accuracy=99.06: 100%|██████████| 938/938 [00:44<00:00, 21.24it/s]
+Test set: Average loss: 0.0135, Accuracy: 9955/10000 (99.55%)
+
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch 14
+Train: Loss=0.0052 Batch_id=937 Accuracy=99.13: 100%|██████████| 938/938 [00:44<00:00, 21.00it/s]
+Test set: Average loss: 0.0132, Accuracy: 9956/10000 (99.56%)
+
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch 15
+Train: Loss=0.0142 Batch_id=937 Accuracy=99.06: 100%|██████████| 938/938 [00:43<00:00, 21.55it/s]
+Test set: Average loss: 0.0131, Accuracy: 9955/10000 (99.55%)
+
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch 16
+Train: Loss=0.0187 Batch_id=937 Accuracy=98.97: 100%|██████████| 938/938 [00:44<00:00, 20.92it/s]
+Test set: Average loss: 0.0132, Accuracy: 9957/10000 (99.57%)
+
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch 17
+Train: Loss=0.0015 Batch_id=937 Accuracy=99.11: 100%|██████████| 938/938 [00:45<00:00, 20.62it/s]
+Test set: Average loss: 0.0129, Accuracy: 9960/10000 (99.60%)
+
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch 18
+Train: Loss=0.0042 Batch_id=937 Accuracy=99.08: 100%|██████████| 938/938 [00:45<00:00, 20.57it/s]
+Test set: Average loss: 0.0129, Accuracy: 9957/10000 (99.57%)
+
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch 19
+Train: Loss=0.2548 Batch_id=937 Accuracy=99.04: 100%|██████████| 938/938 [00:45<00:00, 20.84it/s]
+Test set: Average loss: 0.0132, Accuracy: 9954/10000 (99.54%)
+
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch 20
+Train: Loss=0.0566 Batch_id=937 Accuracy=99.08: 100%|██████████| 938/938 [00:43<00:00, 21.37it/s]
+Test set: Average loss: 0.0131, Accuracy: 9958/10000 (99.58%)
+
+Adjusting learning rate of group 0 to 1.0000e-04.
 ```  
 
 ## How to setup
