@@ -171,7 +171,7 @@ Adjusting learning rate of group 0 to 1.0000e-02.
 
 Epoch 6
 Train: Loss=0.0167 Batch_id=937 Accuracy=98.23: 100%|██████████| 938/938 [00:43<00:00, 21.62it/s]
-Test set: Average loss: 0.0207, Accuracy: **9941/10000 (99.41%)**
+Test set: Average loss: 0.0207, Accuracy: 9941/10000 (99.41%)
 
 Adjusting learning rate of group 0 to 1.0000e-02.
 
@@ -183,31 +183,31 @@ Adjusting learning rate of group 0 to 1.0000e-03.
 
 Epoch 8
 Train: Loss=0.0111 Batch_id=937 Accuracy=98.62: 100%|██████████| 938/938 [00:42<00:00, 22.11it/s]
-Test set: Average loss: 0.0164, Accuracy: **9945/10000 (99.45%)**
+Test set: Average loss: 0.0164, Accuracy: 9945/10000 (99.45%)
 
 Adjusting learning rate of group 0 to 1.0000e-03.
 
 Epoch 9
 Train: Loss=0.0019 Batch_id=937 Accuracy=98.64: 100%|██████████| 938/938 [00:42<00:00, 22.08it/s]
-Test set: Average loss: 0.0162, Accuracy: **9951/10000 (99.51%)**
+Test set: Average loss: 0.0162, Accuracy: 9951/10000 (99.51%)
 
 Adjusting learning rate of group 0 to 1.0000e-03.
 
 Epoch 10
 Train: Loss=0.0296 Batch_id=937 Accuracy=98.77: 100%|██████████| 938/938 [00:42<00:00, 22.03it/s]
-Test set: Average loss: 0.0159, Accuracy: **9948/10000 (99.48%)**
+Test set: Average loss: 0.0159, Accuracy: 9948/10000 (99.48%)
 
 Adjusting learning rate of group 0 to 1.0000e-03.
 
 Epoch 11
 Train: Loss=0.0816 Batch_id=937 Accuracy=98.76: 100%|██████████| 938/938 [00:45<00:00, 20.47it/s]
-Test set: Average loss: 0.0155, Accuracy: **9952/10000 (99.52%)**
+Test set: Average loss: 0.0155, Accuracy: 9952/10000 (99.52%)
 
 Adjusting learning rate of group 0 to 1.0000e-03.
 
 Epoch 12
 Train: Loss=0.0255 Batch_id=937 Accuracy=98.65: 100%|██████████| 938/938 [00:46<00:00, 20.19it/s]
-Test set: Average loss: 0.0152, Accuracy: **9949/10000 (99.49%)**
+Test set: Average loss: 0.0152, Accuracy: 9949/10000 (99.49%)
 
 Adjusting learning rate of group 0 to 1.0000e-03.
 ```  
