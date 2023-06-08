@@ -74,7 +74,7 @@ But after a point if the learning rate is increased, the error doesn't converge.
 -----
 
 # Session 6 Assignment - Part 2
-Modle to detect handwritten digits, trained on MNIST dataset of 60,000 images.
+Model to detect handwritten digits, trained on MNIST dataset of 60,000 images.
 
 **Goal is to create a model with**
 - 99.4% validation accuracy
