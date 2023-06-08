@@ -1,6 +1,80 @@
-# Session 6 Assignment
+# Session 6 Assignment - Part 1
+![Neural Network](https://github.com/piygr/s6erav1/assets/135162847/7ac22310-965b-4cba-930e-65ddee3e6c45)
+**Showcasing backpropogation through excel for the above mentioned neural network**
 
-Modle to detect handwritten digits, trained on MNIST dataset of 60,000 images.
+## How bakcpropogation works?
+The goal of neural netowrk training is to reduce the network error (mean squared error) of estimnated output with the labeled output.
+So, with every delta change in error, the mechanism of updating the network parameters value is called backpropogation.
+With the given neural network, we will understand how the backpropogation looks in action.
+
+1. In the first step, every neuron as a function of previous layer's connected neurons & corresponding weights is defined. Refer 1.) in the below screenshot.
+
+<img width="1337" alt="s6_part1_dEdW" src="https://github.com/piygr/s6erav1/assets/135162847/101f7fae-431a-4bc7-be26-2e6fecc9f587">
+
+2. In the second step, the partial derivatives of error w.r.t. parameters (weights), starting from the output layer moving towards the input layer (hence backpropogation) are derived. Refer to 2.) - 6.). 
+
+3. Once all the partial derivatives are derived in terms of weights, input values, target values & previous layer's neuron values, the excel sheet is populated as show below. 
+<img width="1222" alt="s6_part1_layer1" src="https://github.com/piygr/s6erav1/assets/135162847/151190c1-57f9-4209-bc18-e160fc4bf94e">
+<img width="1125" alt="s6_part1_layer2" src="https://github.com/piygr/s6erav1/assets/135162847/5cac1f43-4355-45c1-a042-bbf6d5af992f">
+<img width="914" alt="s6_part1_error_gradients" src="https://github.com/piygr/s6erav1/assets/135162847/afa864a0-9ec9-4b40-b7e9-dff862a40436">
+
+4. With every iteration, all the weights are updated, all neurons are computed and with the new error, the process is continued.
+
+5. Note that, to update weights in every iteration, the following equation is used. Here, learning rate plays an important role.
+ 
+![image](https://github.com/piygr/s6erav1/assets/135162847/99f89b6c-e2f9-421b-826d-210ca6c1c61b)  
+
+## Effects of learning rate
+
+<table>
+        <tr>
+                <td>
+                        <span>
+        <b>Learning Rate - 0.1</b><br/>
+        <img width="300" alt="s6_part1_lr0 1" src="https://github.com/piygr/s6erav1/assets/135162847/39d84d65-3271-46c9-b048-b6c89a4473db">
+</span>
+                </td>
+                <td>
+                        <span><b>Learning Rate - 0.2</b><br/><img width="300" alt="s6_part1_lr0 2" src="https://github.com/piygr/s6erav1/assets/135162847/fae4258a-73d6-4cff-8aac-fdd53f17ab41"></span>
+                <td>
+        </tr>
+        <tr>
+                <td>
+                        <span>
+        <b>Learning Rate - 0.5</b><br/>
+        <img width="300" alt="s6_part1_lr0 5" src="https://github.com/piygr/s6erav1/assets/135162847/9c0b9cc7-78ac-48db-844f-dcf30f98e15b">
+</span> 
+                </td>
+                <td>
+                    <span>
+        <b>Learning Rate - 0.8</b><br/>
+        <img width="300" alt="s6_part1_lr0 8" src="https://github.com/piygr/s6erav1/assets/135162847/94fc1378-82f9-47d7-be53-d087204c7b3f">
+</span>    
+                <td>
+        </tr>
+        <tr>
+                <td>
+                    <span>
+        <b>Learning Rate - 1.0</b><br/>
+        <img width="300" alt="s6_part1_lr1 0" src="https://github.com/piygr/s6erav1/assets/135162847/f88d1e41-e976-4265-b2bc-1277438974d6">
+</span>    
+                </td>
+                <td>
+                     <span>
+        <b>Learning Rate - 2.0</b><br/>
+        <img width="300" alt="s6_part1_lr2 0" src="https://github.com/piygr/s6erav1/assets/135162847/7099b159-1a1d-4632-a010-c78c157529cc">
+</span>
+                <td>
+        </tr>
+</table>
+
+Since, learning rate is nothing but the weightage given to the error gradient. Higher the learning rate, faster the error converges to zero.
+But after a point if the learning rate is increased, the error doesn't converge. The reason is, the weights never reach to their local minima.
+
+-----
+
+# Session 6 Assignment - Part 2
+Model to detect handwritten digits, trained on MNIST dataset of 60,000 images.
 
 **Goal is to create a model with**
 - 99.4% validation accuracy
@@ -136,9 +210,6 @@ Train: Loss=0.0255 Batch_id=937 Accuracy=98.65: 100%|█████████
 Test set: Average loss: 0.0152, Accuracy: 9949/10000 (99.49%)
 
 Adjusting learning rate of group 0 to 1.0000e-03.
-
-Epoch 13
-Train: Loss=0.0262 Batch_id=763 Accuracy=98.72:  81%|████████  | 762/938 [00:43<00:08, 20.67it/s]
 ```  
 
 ## How to setup
